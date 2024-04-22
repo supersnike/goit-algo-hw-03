@@ -7,13 +7,13 @@ def get_days_from_today(date):
         # Отримання поточної дати
         today = datetime.today()
         # Розрахунок різниці у днях
-        difference = date_obj - today
+        difference =  today - date_obj
         # Повернення різниці у днях як цілого числа
         return difference.days
     except ValueError:
         # Обробка винятків для неправильного формату вхідних даних
-        print("Неправильний формат дати. Використовуйте формат 'РРРР-ММ-ДД'")
+        print("Невірний формат дати. Використовуйте формат 'РРРР-ММ-ДД'")
         return None
 
 # Приклад використання
-print(get_days_from_today("2021-10-09"))  
+print(get_days_from_today("2022-02-24"))  
