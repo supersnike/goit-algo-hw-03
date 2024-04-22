@@ -10,6 +10,7 @@ def normalize_phone(phone_number):
     
     return digits
 
+
 # Приклад використання
 raw_numbers = [
     "067\\t123 4567",
